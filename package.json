@@ -1,0 +1,14 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Mon troisiéme  projet openclassrooms ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch sass/style.scss style.css"
+  },
+  "author": "Derouiche kaoutar",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.54.8"
+  }
+}
