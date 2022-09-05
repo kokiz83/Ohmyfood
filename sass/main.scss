@@ -1,0 +1,39 @@
+@use "./bases/base";
+@use "./layout/header";
+@use "./layout/local";
+@use "./component/résérvation";
+@use "./component/bouton";
+@use "./component/fonction";
+
+
+.restaurants{
+    border: 1px solid black;
+    background-color: #f4f4f5;
+}
+
+.palette{
+    border-radius: 20px;
+    border: 1px solid red;
+}
+.palette img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    height: 161px;
+}
+
+.menu1{
+    margin: 20px;
+}
+p {
+margin: 2px 0 15px 14px;
+}
+h4{
+    margin: 8px 0 5px 14px;
+} 
+h3{
+    padding: 50px 0 5px 20px ;
+    margin: 0;
+}
+
+
+

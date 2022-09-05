@@ -1,0 +1,21 @@
+/*localisation*/
+.cherche{
+    background-color:#e7e7e7 ;
+   & .local {
+        
+        input {
+            text-align: center;
+            background-color: #e7e7e7;
+            font-size: 17px;
+            height: 57px;
+            width: 100%;
+            border: none;
+            font-weight: 700;
+        }   
+        .fontAwesome{
+            font-family: 'Helvetica', "FontAwesome", sans-serif;
+            color:black;
+            
+        }   
+        }
+}

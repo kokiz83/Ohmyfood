@@ -1,0 +1,16 @@
+/*header*/
+header {
+    & p {
+        margin: 0px;
+        text-align: center;
+        box-shadow: 0 3px 3px 1px rgb(161, 157, 157);
+        position: relative;
+        font-family: " Shrikhand", sans-serif;
+
+        img {
+            height: 33px;
+            margin-top: 30px;
+            margin-bottom: 15px; 
+        }
+    }
+}

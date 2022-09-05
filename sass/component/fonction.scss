@@ -1,0 +1,58 @@
+@use "../utiles/box-shadow.scss";
+@use "../utiles/hover.scss";
+
+/*fonctionement*/
+.fonction {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+   & h2{
+        font-size: 1.3rem;
+        font-weight: 800;
+    }
+    
+    .bouton {
+        width: 90%;
+        height: 75px;
+        position: relative;
+        margin: 10px auto;
+        padding: 0;
+        border: none;
+        border-radius: 20px;
+       @include box-shadow.box-shadow;
+        background-color: #f4f4f5;
+        font-size: 1rem;
+        font-weight: 500;
+        text-align: start;
+        color: #000;
+        font-family: "Roboto", sans-serif;
+        transition: 200ms;
+        &:hover{
+           @include hover.hover; 
+           opacity: 0.9;
+            .fas{
+                color: #9356DC;
+            }
+        }
+
+        
+        .numero{
+         border-radius: 50%;
+        border: 1px solid #9356DC  ;
+        background-color: #9356DC;
+        padding: 3px 7.5px 2px 6.5px;
+       color:white;
+        position: absolute;
+        left: -11px;
+        top: 20px;
+    
+        }
+        .fas {
+            text-align: end;
+            width: 35px;
+            margin-right: 11px;
+            margin-left: 10px;
+        }
+    }
+}
+

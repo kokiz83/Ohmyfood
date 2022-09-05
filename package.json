@@ -4,10 +4,13 @@
   "description": "Mon troisiéme  projet openclassrooms ohmyfood",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch sass/style.scss style.css"
+    "sass": "sass --watch sass/main.scss style.css"
   },
   "author": "Derouiche kaoutar",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kokiz83/Ohmyfood.git"
+  },
   "devDependencies": {
     "sass": "^1.54.8"
   }
