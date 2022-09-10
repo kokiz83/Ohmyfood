@@ -1,0 +1,17 @@
+/*localisation*/
+.cherche {
+  background-color: #e7e7e7;
+}
+.cherche .local input {
+  text-align: center;
+  background-color: #e7e7e7;
+  font-size: 17px;
+  height: 57px;
+  width: 100%;
+  border: none;
+  font-weight: 700;
+}
+.cherche .local .fontAwesome {
+  font-family: "Helvetica", "FontAwesome", sans-serif;
+  color: black;
+}/*# sourceMappingURL=local.css.map */

@@ -1,0 +1,33 @@
+footer {
+  background-color: rgb(53, 53, 53);
+}
+footer h2 {
+  margin: 0;
+  padding: 20px 0 0 0;
+  font-weight: 400;
+  text-indent: 7%;
+  font-size: 1.15rem;
+  font-family: "Shrikhand", cursive;
+  color: white;
+}
+footer .pied {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+footer .pied_lien {
+  text-decoration: none;
+  color: white;
+  padding: 7px;
+  font-weight: 400;
+  font-size: 19px;
+}
+footer .pied_lien--icone {
+  padding-right: 10px;
+}
+footer .pied_lien.contact {
+  text-decoration: none;
+}
+footer .pied_lien.contact:hover {
+  color: blue;
+}/*# sourceMappingURL=footer.css.map */

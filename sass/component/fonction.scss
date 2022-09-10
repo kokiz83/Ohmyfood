@@ -5,10 +5,24 @@
 .fonction {
     display: flex;
     justify-content: space-between;
-    flex-flow: row wrap;
-   & h2{
+    flex-direction: column;
+  
+   
+    @media (min-width:992px) {
+       flex-direction: row;
+       width: 100%;
+       height: 126px;
+
+     
+       
+    }
+  
+
+   & .titre_fonction{
         font-size: 1.3rem;
         font-weight: 800;
+        font-family: " Shrikhand", sans-serif;
+
     }
     
     .bouton {
@@ -27,12 +41,23 @@
         color: #000;
         font-family: "Roboto", sans-serif;
         transition: 200ms;
+
+        @media (min-width:992px) {
+            width: 28%;
+            flex-direction: row;
+            
+        }
         &:hover{
            @include hover.hover; 
            opacity: 0.9;
             .fas{
                 color: #9356DC;
             }
+            background-color:#f2eafb ;
+           
+        }
+        .font{
+            font-weight: 800;
         }
 
         
@@ -52,7 +77,12 @@
             width: 35px;
             margin-right: 11px;
             margin-left: 10px;
+            color: grey;
         }
     }
 }
+@media (max-width:990px) {
+    .fonction{
 
+    }
+}

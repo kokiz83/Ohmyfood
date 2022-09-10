@@ -1,0 +1,19 @@
+/*explorer*/
+.recherche--bouton {
+  height: 50px;
+  width: 220px;
+  display: block;
+  margin: 35px auto;
+  border: none;
+  border-radius: 25px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  box-shadow: 0px 5px 10px 0px #c1c1c1;
+  background: linear-gradient(178deg, #FF79DA, #9356DC);
+  color: #FFF;
+  transition: 200ms;
+}
+.recherche--bouton:hover {
+  transform: scale(1.03);
+  opacity: 0.9;
+}/*# sourceMappingURL=explorer.css.map */

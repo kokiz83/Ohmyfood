@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap"
+        rel="stylesheet">
+
+
 
     <script src="https://kit.fontawesome.com/42e054d9f0.js" crossorigin="anonymous"></script>
     <title>ohmyfood</title>
@@ -12,86 +17,261 @@
 
 
 </head>
-<body>
-<header>
-    <p>
-         <img src="images/logo/ohmyfood.png" alt="logo">
-    </p>
-   
-</header>
-<main>
-    <div class="cherche">
-        <form class="local" >
-           
-              <input  type="search" name="paris" id="paris" placeholder="&#xf041;     Paris, Belleville" class="fontAwesome">
-        
-        
-        <label for="paris"></label>
-     </form>
+<div class="container">
+    <div class="load">
+        <div class="load_point"></div>
+        <div class="load_point"></div>
+        <div class="load_point"></div>
+        <div class="load_point"></div>
+        <div class="load_point"></div>
+        <div class="load_point"></div>
+    </div>
 </div>
+<body>
     
-    
-    <section class="résérvation">
-        <h1>Réservez le menu qui <br> vous convient</h1>
-        <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-        <input type="button" class="recherche--bouton" value="Explorer nos restaurants">
-    </section>
-    <aside>
-        <div class="fonction">
-            <h2>Fonctionnement</h2>
-            
-            <button class="bouton">
-                <span class="numero">1</span>
-                <i class="fas fa-mobile-alt"></i>
-                <span>Choisissez un restaurant</span>
+    <header>
+        <p>
+            <img src="images/logo/ohmyfood.png" alt="logo">
+        </p>
 
-            </button>
-            <button class="bouton">
-                <span class="numero">2</span>
-                <i class="fas fa-list-ul" aria-hidden="true"></i>
-                <span>Choisissez un restaurant</span>
+    </header>
+    <main>
+        <div>
+            <div class="cherche">
+                <form class="local">
 
-            </button>
-            <button class="bouton">
-                <span class="numero">3</span>
-                <i class="fas fa-store " aria-hidden="true"></i>
-                <span>Choisissez un restaurant</span>
+                    <input type="search" name="paris" id="paris" placeholder="&#xf041;     Paris, Belleville"
+                        class="fontAwesome">
 
-            </button>
 
-        </div>
-        
-    </aside>
-    <article class="restaurants">
-        <h3>Restaurants</h3>
-         <section class="menu">
-        <div class="menu1">
-            <div class="palette">
-
-               <div><img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="jay">
-                <i></i>
-            </div> 
-                <h4>La palette du gout</h4>
-                <i></i>
-                <p>Ménilmontant</p>
-
+                    <label for="paris"></label>
+                </form>
             </div>
 
 
+            <section class="résérvation">
+                <h1>Réservez le menu qui <br> vous convient</h1>
+                <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+                <input type="button" class="recherche--bouton" value="Explorer nos restaurants">
+            </section>
+            <aside>
 
+                <h2 class="titre_fonction">Fonctionnement</h2>
+
+                <div class="fonction">
+                    <button class="bouton">
+                        <span class="numero">1</span>
+                        <i class="fas fa-mobile-alt"></i>
+                        <span class="font">Choisissez un restaurant</span>
+
+                    </button>
+                    <button class="bouton">
+                        <span class="numero">2</span>
+                        <i class="fas fa-list-ul"></i>
+                        <span class="font">Choisissez un restaurant</span>
+
+                    </button>
+                    <button class="bouton">
+                        <span class="numero">3</span>
+                        <i class="fas fa-store "></i>
+                        <span class="font">Choisissez un restaurant</span>
+
+                    </button>
+
+
+
+
+
+
+                </div>
+
+            </aside>
         </div>
-        
+
+        <!--partie restaurants-->
+        <article class="restaurants">
+
+            <h2 class="titre_réstaurants">Restaurants</h2>
+            <div class="flex">
+                 <div class="flex_1">
+
+                <section class="carte">
+                    <!--lien-->
+                    <a href="pages/La-palette-du-gout.html" class="carte_lien">
+
+                        <span class="carte_lien_nouveau">Nouveau</span>
+                        <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="jay"
+                            class="carte_lien_img">
+
+                        <div class="carte_lien_coeur">
+                            <div>
+                                <h3>La palette du gout</h3>
+                                <p>Ménilmontant</p>
+                            </div>
+                        </div>
+                    </a>
 
 
 
-    </section>
-</article>
-   
+                    <input type="checkbox" class="carte_lien--selection" name="aime" id="aime_la_palette_du_gout">
+                    <label for="aime_la_palette_du_gout" class="coeur">
+
+                        <i class="far fa-heart coeur--vide"></i>
+                        <span class="coeur_filtre">
+                            <i class="fas fa-heart coeur_filtre--plein"></i>
+                        </span>
+                    </label>
 
 
-</main>
-        
-        
-    
+
+
+                </section>
+
+                <section class="carte">
+                    <!--lien-->
+                    <a href="La_note_enchantée.html" class="carte_lien">
+
+                        <span class="carte_lien_nouveau">Nouveau</span>
+                        <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="stil"
+                            class="carte_lien_img stil">
+
+                        <div class="carte_lien_coeur">
+                            <div>
+                                <h3>La note enchantée</h3>
+                                <p>Charonne</p>
+                            </div>
+                        </div>
+                    </a>
+
+
+
+                    <input type="checkbox" class="carte_lien--selection" name="aime" id="aime_la_note_enchantée">
+                    <label for="aime_la_note_enchantée" class="coeur">
+
+                        <i class="far fa-heart coeur--vide"></i>
+                        <span class="coeur_filtre">
+                            <i class="fas fa-heart coeur_filtre--plein"></i>
+                        </span>
+                    </label>
+
+
+
+
+
+
+
+                </section>
+            </div>
+            <div class="flex_2">
+
+                <section class="carte">
+                    <!--lien-->
+                    <a href="A_la_française.html" class="carte_lien">
+
+                        <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="toa"
+                            class="carte_lien_img">
+
+                        <div class="carte_lien_coeur">
+                            <div>
+                                <h3>A la française</h3>
+                                <p>Cité Rouge</p>
+                            </div>
+                        </div>
+                    </a>
+
+
+
+                    <input type="checkbox" class="carte_lien--selection" name="aime" id="aime_à_la_française">
+                    <label for="aime_à_la_française" class="coeur">
+
+                        <i class="far fa-heart coeur--vide"></i>
+                        <span class="coeur_filtre">
+                            <i class="fas fa-heart coeur_filtre--plein"></i>
+                        </span>
+                    </label>
+
+
+
+
+
+
+
+                </section>
+
+                <section class="carte">
+                    <!--lien-->
+                    <a href="La_délice_des_sens" class="carte_lien">
+
+                        <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="louis"
+                            class="carte_lien_img">
+
+                        <div class="carte_lien_coeur">
+                            <div>
+                                <h3>Le délice des sens</h3>
+                                <p>Folie-Méricourt</p>
+                            </div>
+                        </div>
+                    </a>
+
+
+
+                    <input type="checkbox" class="carte_lien--selection" name="aime" id="aime_le_délice_des_sens">
+                    <label for="aime_le_délice_des_sens" class="coeur">
+
+                        <i class="far fa-heart coeur--vide"></i>
+                        <span class="coeur_filtre">
+                            <i class="fas fa-heart coeur_filtre--plein"></i>
+                        </span>
+                    </label>
+
+
+
+
+
+
+
+                </section>
+            </div>
+        </div>
+
+
+           
+        </article>
+
+
+
+      
+
+        <footer>
+            <h2>ohmyfood</h2>
+            <div class="pied">
+                <a class="pied_lien" href="#">
+                    <i class="fas fa-utensils pied_lien--icone"></i>
+                    Proposer un restaurant
+                </a>
+
+                <a class="pied_lien" href="#">
+                    <i class="fas fa-hands-helping pied_lien--icone"></i>
+                    Devenir partenaire
+                </a>
+
+                <a class="pied_lien" href="#">
+                    Mentions légales
+                </a>
+
+                <a class="pied_lien contact" href="mailto:contact@ohmyfood.com">Contact</a>
+
+                </a>
+            </div>
+
+        </footer>
+
+
+
+    </main>
+
+
+
 </body>
+
 </html>

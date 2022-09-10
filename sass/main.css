@@ -178,18 +178,18 @@ header p img {
     padding-left: 20px;
   }
   .restaurants .flex_1 {
-    width: 90%;
+    width: 50%;
   }
   .restaurants .flex_2 {
-    width: 90%;
+    width: 50%;
   }
-}
-.restaurants .titre_réstaurants {
-  padding: 50px 0 5px 20px;
-  margin: 0;
-  font-size: 1.3rem;
-  font-weight: 800;
-  font-family: " Shrikhand", sans-serif;
+  .restaurants .titre_réstaurants {
+    padding: 50px 0 5px 20px;
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: 800;
+    font-family: " Shrikhand", sans-serif;
+  }
 }
 .restaurants .carte {
   margin: 20px;
@@ -227,11 +227,14 @@ header p img {
   width: 100%;
   border-radius: 20px 20px 0 0;
   height: 168px;
-  object-fit: cover;
-  object-position: bottom;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
 }
 .restaurants .carte_lien_img.stil {
-  object-position: center;
+  -o-object-position: center;
+     object-position: center;
 }
 .restaurants .carte_lien_nouveau {
   position: absolute;
@@ -258,7 +261,8 @@ header p img {
   cursor: pointer;
 }
 .restaurants .carte_lien--selection:checked + .coeur .coeur--vide {
-  animation: efface 0.5s linear forwards;
+  -webkit-animation: efface 0.5s linear forwards;
+          animation: efface 0.5s linear forwards;
 }
 .restaurants .carte_lien--selection:checked + .coeur .coeur_filtre--plein {
   opacity: 1;
@@ -266,11 +270,13 @@ header p img {
 .restaurants .carte_lien--selection:checked + .coeur .coeur_filtre--plein {
   opacity: 1;
   z-index: 1;
-  animation: grandi-bat 1.8s linear forwards;
+  -webkit-animation: grandi-bat 1.8s linear forwards;
+          animation: grandi-bat 1.8s linear forwards;
 }
 @media screen and (min-width: 992px) {
   .restaurants .carte_lien--selection:hover + .coeur .coeur--vide {
-    animation: efface 0.5s linear forwards;
+    -webkit-animation: efface 0.5s linear forwards;
+            animation: efface 0.5s linear forwards;
   }
   .restaurants .carte_lien--selection:hover + .coeur .coeur__filtre--plein {
     opacity: 1;
@@ -278,7 +284,8 @@ header p img {
   .restaurants .carte_lien--selection:hover + .coeur .coeur__filtre--plein {
     z-index: 1;
     opacity: 1;
-    animation: grandi-bat 1.8s linear forwards;
+    -webkit-animation: grandi-bat 1.8s linear forwards;
+            animation: grandi-bat 1.8s linear forwards;
   }
 }
 .restaurants .coeur {
@@ -289,6 +296,7 @@ header p img {
   /* zone apparition du coeur plein */
 }
 .restaurants .coeur:hover {
+  cursor: -webkit-grab;
   cursor: grab;
 }
 .restaurants .coeur--vide {
@@ -313,7 +321,8 @@ header p img {
 }
 
 .carte a .stil {
-  object-position: center;
+  -o-object-position: center;
+     object-position: center;
 }
 
 .coeur__filtre, .coeur {
@@ -321,47 +330,68 @@ header p img {
   width: 48px;
 }
 
-footer {
-  background-color: rgb(53, 53, 53);
-}
-footer h2 {
-  margin: 0;
-  padding: 20px 0 0 0;
-  font-weight: 400;
-  text-indent: 7%;
-  font-size: 1.15rem;
-  font-family: "Shrikhand", cursive;
-  color: white;
-}
-footer .pied {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-}
-footer .pied_lien {
-  text-decoration: none;
-  color: white;
-  padding: 7px;
-  font-weight: 400;
-  font-size: 19px;
-}
-footer .pied_lien--icone {
-  padding-right: 10px;
-}
-footer .pied_lien.contact {
-  text-decoration: none;
-}
-footer .pied_lien.contact:hover {
-  color: blue;
-}
-
 /*animation coeur */
+@-webkit-keyframes efface {
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 @keyframes efface {
   90% {
     opacity: 1;
   }
   100% {
     opacity: 0;
+  }
+}
+@-webkit-keyframes grandi-bat {
+  0% {
+    transform: scale3d(0, 0, 1);
+  }
+  33% {
+    transform: scale3d(1, 1, 1);
+  }
+  38% {
+    transform: scale3d(1, 1, 1);
+  }
+  43% {
+    transform: scale3d(1, 1, 1);
+  }
+  48% {
+    transform: scale3d(1, 1, 1);
+  }
+  53% {
+    transform: scale3d(1.4, 1.4, 1);
+  }
+  58% {
+    transform: scale3d(1.05, 1.05, 1);
+  }
+  63% {
+    transform: scale3d(1.2, 1.2, 1);
+  }
+  68% {
+    transform: scale3d(1, 1, 1);
+  }
+  73% {
+    transform: scale3d(1, 1, 1);
+  }
+  78% {
+    transform: scale3d(1, 1, 1);
+  }
+  83% {
+    transform: scale3d(1.4, 1.4, 1);
+  }
+  88% {
+    transform: scale3d(1.05, 1.05, 1);
+  }
+  95% {
+    transform: scale3d(1.2, 1.2, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
   }
 }
 @keyframes grandi-bat {
@@ -411,5 +441,36 @@ footer .pied_lien.contact:hover {
     transform: scale3d(1, 1, 1);
   }
 }
-
-/*# sourceMappingURL=style.css.map */
+footer {
+  background-color: rgb(53, 53, 53);
+}
+footer h2 {
+  margin: 0;
+  padding: 20px 0 0 0;
+  font-weight: 400;
+  text-indent: 7%;
+  font-size: 1.15rem;
+  font-family: "Shrikhand", cursive;
+  color: white;
+}
+footer .pied {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+footer .pied_lien {
+  text-decoration: none;
+  color: white;
+  padding: 7px;
+  font-weight: 400;
+  font-size: 19px;
+}
+footer .pied_lien--icone {
+  padding-right: 10px;
+}
+footer .pied_lien.contact {
+  text-decoration: none;
+}
+footer .pied_lien.contact:hover {
+  color: blue;
+}/*# sourceMappingURL=main.css.map */
