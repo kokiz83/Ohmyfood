@@ -1,23 +1,7 @@
-@use "../utiles/box-shadow.scss";
-@use "../utiles/hover.scss";
+@use "../utiles/mixins.scss";
+
 /*explorer*/
 .recherche--bouton {
-    height: 50px;
-    width: 220px;
-    display: block;
-    margin: 35px auto;
-    border: none;
-    border-radius: 25px;
-    font-size: 0.95rem;
-    font-weight: 500;
-    @include box-shadow.box-shadow;
-    background: linear-gradient(178deg, #FF79DA, #9356DC);
-    color: #FFF;
-    transition: 200ms;
-    &:hover {
-       @include hover.hover;
-       opacity: 0.9;
-    }
-
+   @include mixins.bouton-explore;
 }
     

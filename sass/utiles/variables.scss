@@ -1,0 +1,53 @@
+@mixin bouton-explore {
+    height: 50px;
+    width: 220px;
+    display: block;
+    margin: 35px auto;
+    border: none;
+    border-radius: 25px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    @include box-shadow;
+    background: linear-gradient(178deg, #FF79DA, #9356DC);
+    color: #FFF;
+    transition: 200ms;
+
+    &:hover {
+        transform: scale(1.03);
+        opacity: 0.9;
+    }
+}
+@mixin bouton-fonction {
+   
+        width: 90%;
+        height: 75px;
+        position: relative;
+        margin: 10px auto;
+        padding: 0;
+        border: none;
+        border-radius: 20px;
+       @include box-shadow.box-shadow;
+        background-color: #f4f4f5;
+        font-size: 1rem;
+        font-weight: 500;
+        text-align: start;
+        color: #000;
+        font-family: "Roboto", sans-serif;
+        transition: 200ms;
+
+        @media (min-width:992px) {
+            width: 28%;
+            flex-direction: row;
+            
+        }
+        &:hover{
+           @include hover.hover; 
+           opacity: 0.9;
+            .fas{
+                color: #9356DC;
+            }
+            background-color:#f2eafb ;
+           
+        
+}
+}

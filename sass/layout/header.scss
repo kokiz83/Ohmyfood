@@ -6,6 +6,13 @@ header {
         box-shadow: 0 3px 3px 1px rgb(161, 157, 157);
         position: relative;
         font-family: " Shrikhand", sans-serif;
+        & .lien_fléche {
+                font-size: 25px;
+                color: initial;
+                position: absolute;
+                left: 20px;
+                top: 35px;
+        }
 
         img {
             height: 33px;
@@ -13,4 +20,6 @@ header {
             margin-bottom: 15px; 
         }
     }
+    /*header pages*/
+
 }

@@ -1,0 +1,135 @@
+@use "../utiles/mixins.scss";
+
+
+
+
+
+    .imgfont {
+        width: 100%;
+position:relative;
+        @media (min-width:992px) {
+            object-fit: cover;
+            height: 106vh;
+        }
+    }
+
+    .menu {
+      position: relative;
+        width: 100%;
+       margin-top: -52px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        border-radius: 50px 50px 0 0;
+        background-color: #f6f6f6;
+       
+
+
+        button {
+
+            @include mixins.bouton-explore;
+
+        }
+
+    }
+
+    .menu_1 {
+        position: relative;
+
+        &_titre {
+            font-family: "Shrikhand", cursive;
+            font-size: 27px;
+            margin: 20px;
+
+
+        }
+
+
+        &--selection {
+            display: none;
+            padding: 20px;
+            font-size: 25px;
+            cursor: pointer;
+
+            &:checked+.coeur .coeur--vide {
+                animation: efface 0.5s linear forwards;
+            }
+
+            &:checked+.coeur .coeur_filtre--plein {
+                opacity: 1;
+            }
+
+            &:checked+.coeur .coeur_filtre--plein {
+                opacity: 1;
+                z-index: 1;
+                animation: grandi-bat 1.8s linear forwards;
+            }
+
+        }
+
+        &_coeur {
+            .coeur {
+                @include mixins.coeur;
+
+            }
+
+            /*animation coeur */
+            @include mixins.coeur-effece-bat;
+        }
+
+    }
+
+    .menu_resto {
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        @media (min-width:992px) {
+            flex-direction: row;
+            justify-content: space-evenly;
+
+        }
+        
+
+        &_entree{
+            
+        @include mixins.menu;
+    
+        }
+        
+        &_plat{
+            @include mixins.menu;
+        }
+    
+        &_desserts{
+            @include mixins.menu;
+        }
+      
+}
+    
+   
+
+
+
+    .footer_menu {
+      
+        width: 100%;
+       
+        font-size: 20px;
+    
+    }
+
+/* animation carte*/
+
+@keyframes slideDown{
+    0% {
+  transform: translateY(200px);
+  opacity: 0;
+  
+    }
+  
+    100% {transform: translateY(0);
+     
+      opacity: 1;
+    }
+  }

@@ -1,4 +1,5 @@
-;
+@use "../utiles/mixins.scss";
+
 /*restaurant*/
 .restaurants {
     background-color: #f4f4f5;
@@ -111,70 +112,51 @@
                 z-index: 1;
                 animation: grandi-bat 1.8s linear forwards;
             }
-            @media screen and (min-width: 992px){
-                &:hover + .coeur .coeur--vide{
-                    animation: efface 0.5s linear forwards;
-                }
-                &:hover + .coeur .coeur__filtre--plein{   
-                    opacity: 1;
-                }
-                &:hover + .coeur .coeur__filtre--plein{
-                    z-index: 1;
-                    opacity: 1;
-                    animation: grandi-bat 1.8s linear forwards;
-                }
-            } 
+          
           
             }
     }
     }
-
-    .coeur{
-        
-        position: absolute;
-    right: 10px;
-    bottom: 20px;
-    &:hover{
-        cursor:grab;
-    } /* coeur vide */
-    &--vide{
-        padding: 13px 12.5px 12px 12.8px;
-        font-size: 1.48rem; 
-    } /* zone apparition du coeur plein */
-    &_filtre{
-       
-        position: absolute;
-        right: 0px;
-        top: 0px;
-        /* coeur plein */
-        &--plein{
-           
-            padding: 12px 11px 12px 13px;
-            font-size: 1.5rem; 
-            color: transparent;
-            opacity: 0;
-            transform-origin: 50% 50%;
-            transform: scale(0);  
-            background: linear-gradient(200deg,#9356DC 35%,#FF79DA 65%);
-            -webkit-background-clip: text;
-        }
+  
 
 }
 
+/*animation coeur */
+
+@keyframes efface{
+    90%{opacity: 1;}
+    100%{opacity: 0;}
+}
+.coeur{
+
+    @include mixins.coeur;
+}
+@keyframes grandi-bat{
+    0%{transform: scale3d(0, 0, 1);}
+    33%{transform: scale3d(1, 1, 1);} 
+    38%{transform: scale3d(1, 1, 1);} 
+    43%{transform: scale3d(1, 1, 1);} 
+    48%{transform: scale3d(1, 1, 1);}
+    53%{transform: scale3d(1.4, 1.4, 1);}
+    58%{transform: scale3d(1.05, 1.05, 1);}
+    63%{transform: scale3d(1.2, 1.2, 1);}
+    68%{transform: scale3d(1, 1, 1);}
+    73%{transform: scale3d(1, 1, 1);}
+    78%{transform: scale3d(1, 1, 1);}
+    83%{transform: scale3d(1.4, 1.4, 1);}
+    88%{transform: scale3d(1.05, 1.05, 1);}
+    95%{transform: scale3d(1.2, 1.2, 1);}
+    100%{transform: scale3d(1, 1, 1);}
 }
 
 
-}
 
 .carte a .stil{
     object-position: center;
 }
 
 
-.coeur__filtre, .coeur {
-    height: 48px;
-    width: 48px;
-  }
+
 
 
 

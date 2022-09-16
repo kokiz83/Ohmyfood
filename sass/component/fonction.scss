@@ -1,5 +1,6 @@
-@use "../utiles/box-shadow.scss";
-@use "../utiles/hover.scss";
+
+
+@use "../utiles/mixins.scss";
 
 /*fonctionement*/
 .fonction {
@@ -24,38 +25,11 @@
         font-family: " Shrikhand", sans-serif;
 
     }
-    
-    .bouton {
-        width: 90%;
-        height: 75px;
-        position: relative;
-        margin: 10px auto;
-        padding: 0;
-        border: none;
-        border-radius: 20px;
-       @include box-shadow.box-shadow;
-        background-color: #f4f4f5;
-        font-size: 1rem;
-        font-weight: 500;
-        text-align: start;
-        color: #000;
-        font-family: "Roboto", sans-serif;
-        transition: 200ms;
+    .bouton{
 
-        @media (min-width:992px) {
-            width: 28%;
-            flex-direction: row;
-            
-        }
-        &:hover{
-           @include hover.hover; 
-           opacity: 0.9;
-            .fas{
-                color: #9356DC;
-            }
-            background-color:#f2eafb ;
-           
-        }
+    @include mixins.bouton-fonction; 
+    }
+
         .font{
             font-weight: 800;
         }
@@ -80,9 +54,5 @@
             color: grey;
         }
     }
-}
-@media (max-width:990px) {
-    .fonction{
 
-    }
-}
+
