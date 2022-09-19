@@ -9,7 +9,7 @@
 position:relative;
         @media (min-width:992px) {
             object-fit: cover;
-            height: 106vh;
+            height: 65vh;
         }
     }
 
@@ -23,14 +23,17 @@ position:relative;
         border-radius: 50px 50px 0 0;
         background-color: #f6f6f6;
        
-
+ .commander{
+            margin-bottom: 28px;
+            margin-top: -22px
+        }
 
         button {
 
             @include mixins.bouton-explore;
+            width: 165px;
 
         }
-
     }
 
     .menu_1 {
@@ -39,7 +42,7 @@ position:relative;
         &_titre {
             font-family: "Shrikhand", cursive;
             font-size: 27px;
-            margin: 20px;
+            margin: 27px;
 
 
         }
@@ -81,31 +84,42 @@ position:relative;
 
     .menu_resto {
         
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        @media (min-width:992px) {
-            flex-direction: row;
-            justify-content: space-evenly;
-
-        }
-        
+        @include mixins.menu-resto;
 
         &_entree{
-            
-        @include mixins.menu;
+        
+        @include mixins.menu-entree;
     
         }
         
         &_plat{
-            @include mixins.menu;
+            @include mixins.menu-entree;
         }
     
         &_desserts{
-            @include mixins.menu;
+            @include mixins.menu-entree;
         }
       
 }
+.le-délice{
+    
+    #delay-4{
+
+        height: 87px;
+        padding: 0;
+        .prix{
+            padding: 56px 16px 10px
+        }     
+  }
+}
+.la-note{
+    .imgfont{
+        object-fit: cover;
+        height: 41vh;
+    }
+  
+}
+
     
    
 
@@ -119,17 +133,5 @@ position:relative;
     
     }
 
-/* animation carte*/
 
-@keyframes slideDown{
-    0% {
-  transform: translateY(200px);
-  opacity: 0;
-  
-    }
-  
-    100% {transform: translateY(0);
-     
-      opacity: 1;
-    }
-  }
+    

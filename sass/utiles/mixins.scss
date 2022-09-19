@@ -1,11 +1,16 @@
-
-
 @mixin hover {
-    transform: scale(1.03);  
+    transform: scale(1.03);
 }
-@mixin box-shadow {
+
+@mixin box-shadow-fonction {
     box-shadow: 0px 5px 10px 0px #e8e8e8;
+
 }
+
+@mixin box-shadow {
+    box-shadow: 0px 5px 10px 0px #c6c6c6;
+}
+
 @mixin bouton-explore {
     height: 50px;
     width: 220px;
@@ -16,84 +21,98 @@
     font-size: 0.95rem;
     font-weight: 500;
     @include box-shadow;
-    background: linear-gradient(178deg, #FF79DA, #9356DC);
+    background: linear-gradient(178deg, #FF79DA, #a75cdc);
     color: #FFF;
     transition: 200ms;
     cursor: pointer;
 
     &:hover {
-       @include hover;
+        @include hover;
         opacity: 0.9;
     }
 }
-@mixin bouton-fonction {
-   
-        width: 90%;
-        height: 75px;
-        position: relative;
-        margin: 10px auto;
-        padding: 0;
-        border: none;
-        border-radius: 20px;
-       @include box-shadow;
-        background-color: #f4f4f5;
-        font-size: 1rem;
-        font-weight: 500;
-        text-align: start;
-        color: #000;
-        font-family: "Roboto", sans-serif;
-        transition: 200ms;
 
-        @media (min-width:992px) {
-            width: 28%;
-            flex-direction: row;
-            
+@mixin bouton-fonction {
+
+    width: 91%;
+    height: 75px;
+    position: relative;
+    margin: 10px 0 10px 12px;
+    padding: 0;
+    border: none;
+    border-radius: 20px;
+    @include box-shadow-fonction;
+    background-color: #f4f4f5;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: start;
+    color: #000;
+    font-family: "Roboto", sans-serif;
+    transition: 200ms;
+
+    @media (min-width:992px) {
+        width: 28%;
+        flex-direction: row;
+
+    }
+
+    &:hover {
+        @include hover;
+        opacity: 0.9;
+
+        .fas {
+            color: #9356DC;
         }
-        &:hover{
-           @include 
-           hover; 
-           opacity: 0.9;
-            .fas{
-                color: #9356DC;
-            }
-            background-color:#f2eafb ;
-           
-        
+
+        background-color:#f2eafb;
+
+
+    }
 }
-}
+
 @mixin coeur {
-    position:absolute;
-    right: 10px;
+    position: absolute;
+    right: 24px;
     bottom: 20px;
-    &:hover{
-        cursor:grab;
-    } /* coeur vide */
-    &--vide{
+
+    &:hover {
+        cursor: grab;
+    }
+
+    /* coeur vide */
+    &--vide {
         padding: 13px 12.5px 12px 12.8px;
-        font-size: 1.48rem; 
-    } /* zone apparition du coeur plein */
-    &_filtre{
-       
+        font-size: 1.48rem;
+    }
+
+    /* zone apparition du coeur plein */
+    &_filtre {
+
         position: absolute;
         right: 0px;
         top: 0px;
+
         /* coeur plein */
-        &--plein{
-           
+        &--plein {
+
             padding: 12px 11px 12px 13px;
-            font-size: 1.5rem; 
+            font-size: 1.5rem;
             color: transparent;
             opacity: 0;
             transform-origin: 50% 50%;
-            transform: scale(0);  
-            background: linear-gradient(200deg,#9356DC 35%,#FF79DA 65%);
-            -webkit-background-clip: text;
+            transform: scale(0);
+            background: linear-gradient(200deg, #9356DC 35%, #FF79DA 65%);
+            background-clip: text;
+-webkit-background-clip: text;
+
+          
         }
-    
+
     }
 }
+
 @mixin check-rotate {
-    
+
     @keyframes rotate {
         0% {
 
@@ -105,174 +124,216 @@
         }
     }
 }
+
 /*animation coeur */
 @mixin coeur-effece-bat {
-    @keyframes efface{
-    90%{opacity: 1;}
-    100%{opacity: 0;}
-}
-@keyframes grandi-bat{
-    0%{transform: scale3d(0, 0, 1);}
-    33%{transform: scale3d(1, 1, 1);} 
-    38%{transform: scale3d(1, 1, 1);} 
-    43%{transform: scale3d(1, 1, 1);} 
-    48%{transform: scale3d(1, 1, 1);}
-    53%{transform: scale3d(1.4, 1.4, 1);}
-    58%{transform: scale3d(1.05, 1.05, 1);}
-    63%{transform: scale3d(1.2, 1.2, 1);}
-    68%{transform: scale3d(1, 1, 1);}
-    73%{transform: scale3d(1, 1, 1);}
-    78%{transform: scale3d(1, 1, 1);}
-    83%{transform: scale3d(1.4, 1.4, 1);}
-    88%{transform: scale3d(1.05, 1.05, 1);}
-    95%{transform: scale3d(1.2, 1.2, 1);}
-    100%{transform: scale3d(1, 1, 1);}
-}
+    @keyframes efface {
+        90% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+
+    @keyframes grandi-bat {
+        0% {
+            transform: scale3d(0, 0, 1);
+        }
+
+        33% {
+            transform: scale3d(1, 1, 1);
+        }
+
+        38% {
+            transform: scale3d(1, 1, 1);
+        }
+
+        43% {
+            transform: scale3d(1, 1, 1);
+        }
+
+        48% {
+            transform: scale3d(1, 1, 1);
+        }
+
+        53% {
+            transform: scale3d(1.4, 1.4, 1);
+        }
+
+        58% {
+            transform: scale3d(1.05, 1.05, 1);
+        }
+
+        63% {
+            transform: scale3d(1.2, 1.2, 1);
+        }
+
+        68% {
+            transform: scale3d(1, 1, 1);
+        }
+
+        73% {
+            transform: scale3d(1, 1, 1);
+        }
+
+        78% {
+            transform: scale3d(1, 1, 1);
+        }
+
+        83% {
+            transform: scale3d(1.4, 1.4, 1);
+        }
+
+        88% {
+            transform: scale3d(1.05, 1.05, 1);
+        }
+
+        95% {
+            transform: scale3d(1.2, 1.2, 1);
+        }
+
+        100% {
+            transform: scale3d(1, 1, 1);
+        }
+    }
 }
 
 @mixin menu_resto {
-  
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        @media (min-width:992px) {
-            flex-direction: row;
 
-        }
-      
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  
+
+    @media (min-width:992px) {
+        flex-direction: row;
+
+    }
+
+
 }
 
-    @mixin menu {
-        
-    
-      
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-           @media (min-width:992px) {
-            width: 30%;
-           }
+@mixin menu-entree {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 42px;
 
-            & span {
-                margin-left: 16px;
-                position: relative;
+    @media (min-width:992px) {
+        width: 30%;
+    }
 
-                &:after {
+    & span {
+        margin-left: 16px;
+        position: relative;
+        margin-bottom: 10px;
 
-                    content: '';
-                    width: 50px;
-                    height: 4px;
-                    background: #99e2d0;
-                    position: absolute;
-                    z-index: 20;
-                    left: 0px;
-                    bottom: -8px;
+        &:after {
 
+            content: '';
+            width: 42px;
+            height: 3px;
+            background: #99E2D0;
+            position: absolute;
+            z-index: 20;
+            left: 0px;
+            bottom: -8px;
+
+        }
+    }
+    &--carte {
+        border-radius: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin: 13px 10px 0px 10px;
+        height: 64px;
+        background-color: white;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        @include box-shadow;
+        animation: itemAppear 3s;
+        animation-timing-function: cubic-bezier(.5, 1.58, .34, .82);
+        animation-fill-mode: both;
+        transform: scale(0);
+
+        .premier-plat {
+            height: 87px;
+        }
+
+
+        &:hover {
+
+            cursor: pointer;
+
+
+            .prix {
+                padding-right: 13px;
+            }
+
+            .chek {
+                flex-shrink: 0;
+                padding: 19px 47px 20px 20px;
+
+                & i {
+
+                    animation: rotate 0.5s ease-in-out;
+                    @include check-rotate;
                 }
             }
 
-            
-            &--carte {
-                border-radius: 15px;
-                display: flex;
-                justify-content: space-between;
-                align-items: flex-end;
-                margin: 11px;
-                height: 64px;
-                background-color: white;
-                margin-top: 20px;
-             
-                text-overflow: ellipsis;
-                white-space: nowrap;
-                overflow: hidden;
-                @include box-shadow;
-               animation: fadein 3s ;
+        }
+        .prix_chek {
+            display: flex;
+            height: 100%;
+        }
 
-            
-                
+        .prix {
+            position: relative;
+            padding: 34px 9px 10px;
+            padding-right: 19px;
+            padding-left: 9px;
+        }
 
-                &:hover {
-
-                    cursor: pointer;
+        .chek {
+            transition: padding 0.5s;
+            margin-right: -24px;
+            flex-shrink: 0;
+            height: 100%;
+            border-radius: 0 15px 15px 0;
+            background-color: #99E2D0;
+            ;
 
 
-                    .prix {
-                        padding-right: 13px;
-                    }
+            & i {
 
-                    .chek {
-                        flex-shrink: 0;
-                        padding: 19px 47px 20px 20px;
-
-                        & i {
-
-                            animation: rotate 0.5s ease-in-out;
-                            @include check-rotate;
-                        }
-                        }
-                    }
-                    
-/* animation carte*/
-
-@keyframes fadein{
-    0% {
- 
-  opacity: 0;
-  
-    }
-  
-   100%{
-     
-      opacity: 1;
-    }
-  }
-
-                .prix_chek {
-                    display: flex;
-                }
-
-                .prix {
-                    position: relative;
-                    padding: 34px 9px 10px;
-                    padding-right: 19px;
-                    padding-left: 9px;
-                }
-
-                .chek {
-                    transition: padding 0.5s;
-                    margin-right: -24px;
-                    flex-shrink: 0;
-                    height: 64px;
-                    border-radius: 0 15px 15px 0;
-                    background-color: aquamarine;
-
-
-                    & i {
-
-                        left: 20px;
-                        top: 20px;
-                        color: white;
-                        font-size: 23px;
-
-                    }
-
-                }
-
-                .discription {
-                    padding: 9px 0px 10px 16px;
-                    overflow: hidden;
-
-                    h3,
-                    p {
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-                        white-space: nowrap;
-                        margin: 0px;
-                    }
-                }
+                left: 20px;
+                top: 20px;
+                color: white;
+                font-size: 23px;
 
             }
 
         }
 
-        
+        .discription {
+            padding: 9px 0px 10px 16px;
+            overflow: hidden;
+
+            h3,
+            p {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                margin: 0px;
+            }
+
+        }
+
+
+    }
+
+}

@@ -1,5 +1,3 @@
-
-
 @use "../utiles/mixins.scss";
 
 /*fonctionement*/
@@ -7,52 +5,49 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-  
-   
+
     @media (min-width:992px) {
-       flex-direction: row;
-       width: 100%;
-       height: 126px;
-
-     
-       
+        flex-direction: row;
+        width: 100%;
+        height: 126px;
     }
-  
 
-   & .titre_fonction{
+
+    & .titre_fonction {
         font-size: 1.3rem;
         font-weight: 800;
         font-family: " Shrikhand", sans-serif;
 
     }
-    .bouton{
 
-    @include mixins.bouton-fonction; 
+    .bouton {
+
+        @include mixins.bouton-fonction;
     }
 
-        .font{
-            font-weight: 800;
-        }
+    .font {
+        font-weight: 800;
+    }
 
-        
-        .numero{
-         border-radius: 50%;
-        border: 1px solid #9356DC  ;
+
+    .numero {
+        border-radius: 50%;
+        border: 1px solid #9356DC;
         background-color: #9356DC;
         padding: 3px 7.5px 2px 6.5px;
-       color:white;
+        color: white;
         position: absolute;
         left: -11px;
         top: 20px;
-    
-        }
-        .fas {
-            text-align: end;
-            width: 35px;
-            margin-right: 11px;
-            margin-left: 10px;
-            color: grey;
-        }
+
     }
 
-
+    .fas {
+        text-align: end;
+        width: 35px;
+        margin-right: 21px;
+        margin-left: 10px;
+        color: grey;
+        font-size: 18px;
+    }
+}
