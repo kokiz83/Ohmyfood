@@ -1,4 +1,5 @@
 @use "../utiles/mixins.scss";
+$couleur-primaire: #9356DC;
 
 /*fonctionement*/
 .fonction {
@@ -32,8 +33,8 @@
 
     .numero {
         border-radius: 50%;
-        border: 1px solid #9356DC;
-        background-color: #9356DC;
+        border: 1px solid $couleur-primaire;
+        background-color: $couleur-primaire;
         padding: 3px 7.5px 2px 6.5px;
         color: white;
         position: absolute;

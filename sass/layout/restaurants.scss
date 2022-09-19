@@ -1,8 +1,8 @@
 @use "../utiles/mixins.scss";
-
+$background-color-6: #f6f6f6;
 /*restaurant*/
 .restaurants {
-    background-color: #f6f6f6;
+    background-color: $background-color-6;
     height: 1262px;
     margin-top: 60px;
     margin-bottom: -62px;

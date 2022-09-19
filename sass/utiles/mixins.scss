@@ -1,3 +1,10 @@
+$background-color-2: #f4f4f5;
+$background-color-1: linear-gradient(178deg, #FF79DA, #9356DC);
+$background-color-3: #f2eafb;
+$background-7: linear-gradient(200deg, #9356DC 35%, #FF79DA 65%);
+$couleur-tertiaire: #99E2D0;
+$color-white: white;
+
 @mixin hover {
     transform: scale(1.03);
 }
@@ -21,7 +28,7 @@
     font-size: 0.95rem;
     font-weight: 500;
     @include box-shadow;
-    background: linear-gradient(178deg, #FF79DA, #a75cdc);
+    background:$background-color-1;
     color: #FFF;
     transition: 200ms;
     cursor: pointer;
@@ -42,7 +49,7 @@
     border: none;
     border-radius: 20px;
     @include box-shadow-fonction;
-    background-color: #f4f4f5;
+    background-color: $background-color-2;
     font-size: 1rem;
     font-weight: 500;
     text-align: start;
@@ -64,7 +71,7 @@
             color: #9356DC;
         }
 
-        background-color:#f2eafb;
+        background-color:$background-color-3;
 
 
     }
@@ -101,7 +108,7 @@
             opacity: 0;
             transform-origin: 50% 50%;
             transform: scale(0);
-            background: linear-gradient(200deg, #9356DC 35%, #FF79DA 65%);
+            background: $background-7;
             background-clip: text;
 -webkit-background-clip: text;
 
@@ -235,7 +242,7 @@
             content: '';
             width: 42px;
             height: 3px;
-            background: #99E2D0;
+            background: $couleur-tertiaire;
             position: absolute;
             z-index: 20;
             left: 0px;
@@ -250,7 +257,7 @@
         align-items: flex-end;
         margin: 13px 10px 0px 10px;
         height: 64px;
-        background-color: white;
+        background-color: $color-white;
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
@@ -304,7 +311,7 @@
             flex-shrink: 0;
             height: 100%;
             border-radius: 0 15px 15px 0;
-            background-color: #99E2D0;
+            background-color: $couleur-tertiaire;
             ;
 
 
@@ -312,7 +319,7 @@
 
                 left: 20px;
                 top: 20px;
-                color: white;
+                color: $color-white;
                 font-size: 23px;
 
             }

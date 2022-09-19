@@ -1,16 +1,21 @@
+/*bases*/
 @use "./bases/base";
+@use "./bases/animations.scss";
+@use "./bases/loader.scss";
+/*layout*/
+@use "./layout/footer.scss";
 @use "./layout/header";
+@use "./layout/restaurants";
 @use "./layout/local";
+/*component*/
 @use "./component/résérvation";
 @use "./component/explorer";
 @use "./component/fonction";
-@use "./layout/restaurants";
-@use "./utiles/colors";
-@use "./layout/footer.scss";
-@use "./bases/animations.scss";
-@use "./menu-restaurant/menu_1.scss";
+/*utiles*/
+@use "./utiles/variables.scss";
 @use "./utiles/mixins.scss";
-@use "./bases/loader.scss";
+
+@use "./menu-restaurant/menu_1.scss";
 
 
 

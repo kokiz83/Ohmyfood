@@ -1,5 +1,5 @@
 
-
+$couleur-primaire: #9356DC;
 
 .loader{
  
@@ -27,7 +27,7 @@
         border-radius: 1rem;
         animation: jump 1s;
         animation-iteration-count: 1;
-        background-color: #9356dc;
+        background-color:$couleur-primaire;
     }
     .point-1{
         animation-delay: 100ms;
