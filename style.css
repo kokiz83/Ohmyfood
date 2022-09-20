@@ -533,7 +533,7 @@ header p img {
 @media (min-width: 992px) {
   .imgfont {
     object-fit: cover;
-    height: 65vh;
+    height: 87vh;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
@@ -1017,7 +1017,12 @@ header p img {
 
 .la-note .imgfont {
   object-fit: cover;
-  height: 41vh;
+  height: 82vh;
+}
+@media (min-width: 992px) {
+  .la-note .menu_resto_entree {
+    margin-bottom: -34px;
+  }
 }
 
 .footer_menu {

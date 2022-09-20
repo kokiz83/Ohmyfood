@@ -9,7 +9,7 @@ $background-color-6: #f6f6f6;
 position:relative;
         @media (min-width:992px) {
             object-fit: cover;
-            height: 65vh;
+            height: 87vh;
         }
         @media (min-width:768px) and (max-width:992px) {
             height: 60vh;
@@ -119,10 +119,15 @@ position:relative;
 .la-note{
     .imgfont{
         object-fit: cover;
-        height: 41vh;
+        height: 82vh; 
+} 
+  @media (min-width:992px) {
+      
+        .menu_resto_entree{
+            margin-bottom: -34px;
+        }
     }
-  
-}
+    }
 
     .footer_menu {
       
