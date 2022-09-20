@@ -87,12 +87,14 @@ aside {
   }
 }
 /*animation carte*/
-@keyframes itemAppear {
-  from {
-    transform: scale(0);
+@keyframes Appear {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
   }
-  to {
-    transform: scale(1);
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 #delay-0 {
@@ -104,7 +106,7 @@ aside {
 }
 
 #delay-2 {
-  animation-delay: 150ms;
+  animation-delay: 200ms;
 }
 
 #delay-3 {
@@ -112,23 +114,27 @@ aside {
 }
 
 #delay-4 {
-  animation-delay: 350ms;
-}
-
-#delay-5 {
   animation-delay: 400ms;
 }
 
-#delay-6 {
-  animation-delay: 450ms;
+#delay-5 {
+  animation-delay: 500ms;
 }
 
-#delay-7 {
+#delay-6 {
   animation-delay: 600ms;
 }
 
+#delay-7 {
+  animation-delay: 700ms;
+}
+
 #delay-8 {
-  animation-delay: 650ms;
+  animation-delay: 800ms;
+}
+
+#delay-9 {
+  animation-delay: 900ms;
 }
 
 .loader {
@@ -735,8 +741,7 @@ header p img {
   white-space: nowrap;
   overflow: hidden;
   box-shadow: 0px 5px 10px 0px #c6c6c6;
-  animation: itemAppear 3s;
-  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  animation: Appear 1s;
   animation-fill-mode: both;
   transform: scale(0);
 }
@@ -837,8 +842,7 @@ header p img {
   white-space: nowrap;
   overflow: hidden;
   box-shadow: 0px 5px 10px 0px #c6c6c6;
-  animation: itemAppear 3s;
-  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  animation: Appear 1s;
   animation-fill-mode: both;
   transform: scale(0);
 }
@@ -939,8 +943,7 @@ header p img {
   white-space: nowrap;
   overflow: hidden;
   box-shadow: 0px 5px 10px 0px #c6c6c6;
-  animation: itemAppear 3s;
-  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  animation: Appear 1s;
   animation-fill-mode: both;
   transform: scale(0);
 }
@@ -1026,5 +1029,6 @@ header p img {
 /*layout*/
 /*component*/
 /*utiles*/
+/*menu*/
 
 /*# sourceMappingURL=style.css.map */

@@ -262,8 +262,7 @@ $color-white: white;
         white-space: nowrap;
         overflow: hidden;
         @include box-shadow;
-        animation: itemAppear 3s;
-        animation-timing-function: cubic-bezier(.5, 1.58, .34, .82);
+        animation: Appear 1s;
         animation-fill-mode: both;
         transform: scale(0);
 
