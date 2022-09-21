@@ -107,18 +107,6 @@ position:relative;
 }
 .le-délice{
 
-    .check{
-        padding: 30px 47px 30px 20px;
-        :hover{
-        }
-      i{
-        margin-top:30px ;
-        transform: rotate(0deg);
-      
-    }  
-    }
-     
-    
     #delay-4
     {
 height: 87px;
@@ -127,19 +115,14 @@ height: 87px;
         .prix{
             padding: 56px 16px 10px
         } 
-        .check{
-            :hover{
+        .check:hover{
                 padding: 30px 47px 30px 20px;
 
             }
-          i{
-            margin-top:30px ;
-            transform: rotate(0deg);
-          
-        }  
+           
         }     
   }
-}
+
 .la-note{
     .imgfont{
         object-fit: cover;
