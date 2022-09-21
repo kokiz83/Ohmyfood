@@ -9,7 +9,7 @@ $background-color-6: #f6f6f6;
 position:relative;
         @media (min-width:992px) {
             object-fit: cover;
-            height: 87vh;
+            height: 36vh;
         }
         @media (min-width:768px) and (max-width:992px) {
             height: 60vh;
@@ -108,12 +108,17 @@ position:relative;
 .le-délice{
     
     #delay-4{
-
-        height: 87px;
+height: 87px;
         padding: 0;
+
         .prix{
             padding: 56px 16px 10px
-        }     
+        }  
+        .fas, .fa-check-circle{
+            padding-top: 16px;
+        }
+      
+          
   }
 }
 .la-note{
@@ -122,7 +127,9 @@ position:relative;
         height: 82vh; 
 } 
   @media (min-width:992px) {
-      
+      .imgfont{
+        height: 50vh;
+      }
         .menu_resto_entree{
             margin-bottom: -34px;
         }
