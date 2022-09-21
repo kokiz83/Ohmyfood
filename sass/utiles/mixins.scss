@@ -28,7 +28,7 @@ $color-white: white;
     font-size: 0.95rem;
     font-weight: 500;
     @include box-shadow;
-    background:$background-color-1;
+    background: $background-color-1;
     color: #FFF;
     transition: 200ms;
     cursor: pointer;
@@ -110,9 +110,9 @@ $color-white: white;
             transform: scale(0);
             background: $background-7;
             background-clip: text;
--webkit-background-clip: text;
+            -webkit-background-clip: text;
 
-          
+
         }
 
     }
@@ -216,7 +216,7 @@ $color-white: white;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-  
+
 
     @media (min-width:992px) {
         flex-direction: row;
@@ -254,6 +254,7 @@ $color-white: white;
 
         }
     }
+
     &--carte {
         border-radius: 15px;
         display: flex;
@@ -289,13 +290,13 @@ $color-white: white;
                 padding: 19px 47px 20px 20px;
 
                 & i {
-margin-top:0 ;
-                   
+                    margin-top: 0;
+
                     transform: rotate(360deg);
                 }
             }
-
         }
+
         .prix_chek {
             display: flex;
             height: 100%;
@@ -319,11 +320,11 @@ margin-top:0 ;
 
 
             & i {
-transform: rotate(0deg);
-            transition: all 0.5s;
+                transform: rotate(0deg);
+                transition: all 0.5s;
                 color: $color-white;
                 font-size: 23px;
-margin-top: 20px;
+                margin-top: 20px;
             }
 
         }

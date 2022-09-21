@@ -989,15 +989,19 @@ header p img {
   margin: 0px;
 }
 
+.le-délice .check :hover {
+  padding: 30px 47px 30px 20px;
+}
+.le-délice .check i {
+  margin-top: 30px;
+  transform: rotate(0deg);
+}
 .le-délice #delay-4 {
   height: 87px;
   padding: 0;
 }
 .le-délice #delay-4 .prix {
   padding: 56px 16px 10px;
-}
-.le-délice #delay-4 .fas, .le-délice #delay-4 .fa-check-circle {
-  padding-top: 16px;
 }
 
 .la-note .imgfont {
