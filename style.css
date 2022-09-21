@@ -759,15 +759,8 @@ header p img {
   padding: 19px 47px 20px 20px;
 }
 .menu_resto_entree--carte:hover .chek i {
-  animation: rotate 0.5s ease-in-out;
-}
-@keyframes rotate {
-  0% {
-    transform: rotate(-270deg);
-  }
-  100% {
-    transform: rotate(0);
-  }
+  margin-top: 0;
+  transform: rotate(360deg);
 }
 .menu_resto_entree--carte .prix_chek {
   display: flex;
@@ -788,8 +781,11 @@ header p img {
   background-color: #99E2D0;
 }
 .menu_resto_entree--carte .chek i {
+  transform: rotate(0deg);
+  transition: all 0.5s;
   color: white;
   font-size: 23px;
+  margin-top: 20px;
 }
 .menu_resto_entree--carte .discription {
   padding: 9px 0px 10px 16px;
@@ -858,15 +854,8 @@ header p img {
   padding: 19px 47px 20px 20px;
 }
 .menu_resto_plat--carte:hover .chek i {
-  animation: rotate 0.5s ease-in-out;
-}
-@keyframes rotate {
-  0% {
-    transform: rotate(-270deg);
-  }
-  100% {
-    transform: rotate(0);
-  }
+  margin-top: 0;
+  transform: rotate(360deg);
 }
 .menu_resto_plat--carte .prix_chek {
   display: flex;
@@ -887,8 +876,11 @@ header p img {
   background-color: #99E2D0;
 }
 .menu_resto_plat--carte .chek i {
+  transform: rotate(0deg);
+  transition: all 0.5s;
   color: white;
   font-size: 23px;
+  margin-top: 20px;
 }
 .menu_resto_plat--carte .discription {
   padding: 9px 0px 10px 16px;
@@ -957,15 +949,8 @@ header p img {
   padding: 19px 47px 20px 20px;
 }
 .menu_resto_desserts--carte:hover .chek i {
-  animation: rotate 0.5s ease-in-out;
-}
-@keyframes rotate {
-  0% {
-    transform: rotate(-270deg);
-  }
-  100% {
-    transform: rotate(0);
-  }
+  margin-top: 0;
+  transform: rotate(360deg);
 }
 .menu_resto_desserts--carte .prix_chek {
   display: flex;
@@ -986,8 +971,11 @@ header p img {
   background-color: #99E2D0;
 }
 .menu_resto_desserts--carte .chek i {
+  transform: rotate(0deg);
+  transition: all 0.5s;
   color: white;
   font-size: 23px;
+  margin-top: 20px;
 }
 .menu_resto_desserts--carte .discription {
   padding: 9px 0px 10px 16px;
