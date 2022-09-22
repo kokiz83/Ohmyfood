@@ -762,10 +762,7 @@ header p img {
   transform: rotate(360deg);
 }
 .menu_resto_entree--carte:hover .marg {
-  padding-top: 30px 47px 20px 20px;
-}
-.menu_resto_entree--carte .marg i {
-  margin-top: 14px;
+  padding-top: 30px;
 }
 .menu_resto_entree--carte .prix_chek {
   display: flex;
@@ -861,10 +858,7 @@ header p img {
   transform: rotate(360deg);
 }
 .menu_resto_plat--carte:hover .marg {
-  padding-top: 30px 47px 20px 20px;
-}
-.menu_resto_plat--carte .marg i {
-  margin-top: 14px;
+  padding-top: 30px;
 }
 .menu_resto_plat--carte .prix_chek {
   display: flex;
@@ -960,10 +954,7 @@ header p img {
   transform: rotate(360deg);
 }
 .menu_resto_desserts--carte:hover .marg {
-  padding-top: 30px 47px 20px 20px;
-}
-.menu_resto_desserts--carte .marg i {
-  margin-top: 14px;
+  padding-top: 30px;
 }
 .menu_resto_desserts--carte .prix_chek {
   display: flex;

@@ -295,12 +295,10 @@ $color-white: white;
                 }
             }
             .marg{
-                padding-top: 30px 47px 20px 20px;
+                padding-top: 30px;
             }
         }
-        .marg i{
-            margin-top: 14px;
-        }
+       
 
         .prix_chek {
             display: flex;
@@ -345,6 +343,7 @@ $color-white: white;
                 white-space: nowrap;
                 margin: 0px;
             }
+           
 
         }
 
