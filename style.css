@@ -761,6 +761,9 @@ header p img {
   margin-top: 0;
   transform: rotate(360deg);
 }
+.menu_resto_entree--carte:hover .marg {
+  padding-top: 30px 47px 20px 20px;
+}
 .menu_resto_entree--carte .prix_chek {
   display: flex;
   height: 100%;
@@ -853,6 +856,9 @@ header p img {
 .menu_resto_plat--carte:hover .chek i {
   margin-top: 0;
   transform: rotate(360deg);
+}
+.menu_resto_plat--carte:hover .marg {
+  padding-top: 30px 47px 20px 20px;
 }
 .menu_resto_plat--carte .prix_chek {
   display: flex;
@@ -947,6 +953,9 @@ header p img {
   margin-top: 0;
   transform: rotate(360deg);
 }
+.menu_resto_desserts--carte:hover .marg {
+  padding-top: 30px 47px 20px 20px;
+}
 .menu_resto_desserts--carte .prix_chek {
   display: flex;
   height: 100%;
@@ -986,9 +995,6 @@ header p img {
 .le-délice #delay-4 {
   height: 87px;
   padding: 0;
-}
-.le-délice #delay-4 .check {
-  padding-top: 30px 20px 30ox 20px;
 }
 .le-délice #delay-4 .prix {
   padding: 56px 16px 10px;
