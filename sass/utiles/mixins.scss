@@ -286,7 +286,7 @@ $color-white: white;
             }
 
             .chek {
-                flex-shrink: 0;
+              
                 padding: 19px 47px 20px 20px;
 
                 & i {
@@ -311,11 +311,11 @@ $color-white: white;
         .chek {
             transition: padding 0.5s;
             margin-right: -24px;
-            flex-shrink: 0;
+          
             height: 100%;
             border-radius: 0 15px 15px 0;
             background-color: $couleur-tertiaire;
-            ;
+            
 
 
             & i {
