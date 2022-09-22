@@ -72,8 +72,10 @@ $background-color-6: #f6f6f6;
             object-fit: cover;
             object-position: bottom;
             &.stil{
-                object-position: center;
+                object-position:50% 60%;
+                height: 147px;
             }
+          
         }
 
         &_nouveau {
@@ -130,9 +132,7 @@ $background-color-6: #f6f6f6;
     @include mixins.coeur;
 }
 
-.carte a .stil{
-    object-position: center;
-}
+
 
 
 

@@ -216,7 +216,7 @@ footer .pied_lien {
   text-decoration: none;
   color: white;
   padding: 7px;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 15px;
 }
 footer .pied_lien--icone {
@@ -324,7 +324,8 @@ header p img {
   object-position: bottom;
 }
 .restaurants .carte_lien_img.stil {
-  object-position: center;
+  object-position: 50% 60%;
+  height: 147px;
 }
 .restaurants .carte_lien_nouveau {
   position: absolute;
@@ -395,20 +396,21 @@ header p img {
   -webkit-background-clip: text;
 }
 
-.carte a .stil {
-  object-position: center;
-}
-
 /*localisation*/
 .cherche {
   background-color: #e7e7e7;
+}
+.cherche .local {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .cherche .local input {
   text-align: center;
   background-color: #e7e7e7;
   font-size: 17px;
   height: 57px;
-  width: 100%;
+  width: 50%;
   border: none;
   font-weight: 700;
 }
@@ -546,11 +548,11 @@ header p img {
 .menu {
   position: relative;
   width: 100%;
-  margin-top: -52px;
+  margin-top: -48px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  border-radius: 50px 50px 0 0;
+  border-radius: 42px 42px 0 0;
   background-color: #f6f6f6;
 }
 .menu .commander {
@@ -571,7 +573,10 @@ header p img {
   color: #FFF;
   transition: 200ms;
   cursor: pointer;
-  width: 165px;
+  width: 190px;
+  font-size: 17px;
+  height: 55px;
+  font-weight: 600;
 }
 .menu button:hover {
   transform: scale(1.03);
@@ -773,6 +778,7 @@ header p img {
   padding: 34px 9px 10px;
   padding-right: 19px;
   padding-left: 9px;
+  font-weight: 500;
 }
 .menu_resto_entree--carte .chek {
   transition: padding 0.5s;
@@ -869,6 +875,7 @@ header p img {
   padding: 34px 9px 10px;
   padding-right: 19px;
   padding-left: 9px;
+  font-weight: 500;
 }
 .menu_resto_plat--carte .chek {
   transition: padding 0.5s;
@@ -965,6 +972,7 @@ header p img {
   padding: 34px 9px 10px;
   padding-right: 19px;
   padding-left: 9px;
+  font-weight: 500;
 }
 .menu_resto_desserts--carte .chek {
   transition: padding 0.5s;
@@ -1002,7 +1010,10 @@ header p img {
 
 .la-note .imgfont {
   object-fit: cover;
-  height: 82vh;
+  height: 278px;
+}
+.la-note .menu {
+  margin-top: -48px;
 }
 @media (min-width: 992px) {
   .la-note .imgfont {

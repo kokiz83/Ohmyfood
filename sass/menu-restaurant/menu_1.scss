@@ -20,11 +20,11 @@ position:relative;
     .menu {
       position: relative;
         width: 100%;
-       margin-top: -52px;
+       margin-top: -48px;
         display: flex;
         justify-content: space-between;
         flex-direction: column;
-        border-radius: 50px 50px 0 0;
+        border-radius: 42px 42px 0 0;
         background-color: $background-color-6;
        
  .commander{
@@ -35,7 +35,10 @@ position:relative;
         button {
 
             @include mixins.bouton-explore;
-            width: 165px;
+            width: 190px;
+            font-size: 17px;
+            height: 55px;
+            font-weight: 600;
 
         }
     }
@@ -122,16 +125,20 @@ height: 87px;
 .la-note{
     .imgfont{
         object-fit: cover;
-        height: 82vh; 
+        height: 278px; 
 } 
-  @media (min-width:992px) {
-      .imgfont{
+.menu{
+    margin-top: -48px;
+}
+@media (min-width:992px) {
+    .imgfont{
         height: 50vh;
-      }
-        .menu_resto_entree{
-            margin-bottom: -34px;
-        }
     }
+    .menu_resto_entree{
+        margin-bottom: -34px;
+    }
+}
+
     }
 
     .footer_menu {
