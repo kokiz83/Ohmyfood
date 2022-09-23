@@ -1,5 +1,6 @@
 @use "../utiles/mixins.scss";
 $background-color-6: #f6f6f6;
+$couleur-tertiaire: #99E2D0;
 $font-size-1: 0.95rem 1rem 1.15rem 1.3rem 1.5rem 1.48rem  ;
 $font-size-2: 14px 15px 16px 17px 18px 19px 20px 23px 25px 27px;
 
@@ -85,8 +86,8 @@ $font-size-2: 14px 15px 16px 17px 18px 19px 20px 23px 25px 27px;
             position: absolute;
             left: 71%;
             top: 14px;
-            border: 1px solid #99e2d0;
-            background-color: #99e2d0;
+            border: 1px solid $couleur-tertiaire;
+            background-color: $couleur-tertiaire;
             padding: 6px;
             width: 25%;
             text-align: center;
