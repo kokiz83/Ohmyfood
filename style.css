@@ -261,7 +261,7 @@ header p img {
   margin-top: 60px;
   margin-bottom: -62px;
 }
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   .restaurants {
     height: 742px;
   }
@@ -293,7 +293,7 @@ header p img {
   transform: scale(1);
   opacity: 1;
 }
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   .restaurants .carte {
     width: 90%;
   }
@@ -462,7 +462,7 @@ header p img {
   justify-content: space-between;
   flex-direction: column;
 }
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   .fonction {
     flex-direction: row;
     width: 100%;
@@ -491,7 +491,7 @@ header p img {
   font-family: "Roboto", sans-serif;
   transition: 200ms;
 }
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   .fonction .bouton {
     width: 28%;
     flex-direction: row;
@@ -506,7 +506,7 @@ header p img {
   color: #9356DC;
 }
 .fonction .font {
-  font-weight: 800;
+  font-weight: 600;
 }
 .fonction .numero {
   border-radius: 50%;
@@ -531,7 +531,7 @@ header p img {
   width: 100%;
   position: relative;
 }
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   .imgfont {
     object-fit: cover;
     height: 36vh;
@@ -587,13 +587,13 @@ header p img {
 }
 .menu_1_titre {
   font-family: "Shrikhand", cursive;
-  font-size: 27px;
+  font-size: 14px 15px 16px 17px 18px 19px 20px 23px 25px 27px, 10;
   margin: 27px;
 }
 .menu_1--selection {
   display: none;
   padding: 20px;
-  font-size: 25px;
+  font-size: 14px 15px 16px 17px 18px 19px 20px 23px 25px 27px, 9;
   cursor: pointer;
 }
 .menu_1--selection:checked + .coeur .coeur--vide {
@@ -606,9 +606,6 @@ header p img {
   opacity: 1;
   z-index: 1;
   animation: grandi-bat 1.8s linear forwards;
-}
-.menu_1_coeur {
-  /*animation coeur */
 }
 .menu_1_coeur .coeur {
   position: absolute;
@@ -701,7 +698,7 @@ header p img {
   flex-direction: column;
   justify-content: space-evenly;
 }
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   .menu_resto {
     flex-direction: row;
   }
@@ -712,7 +709,7 @@ header p img {
   justify-content: space-evenly;
   margin-bottom: 42px;
 }
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   .menu_resto_entree {
     width: 30%;
   }
@@ -809,7 +806,7 @@ header p img {
   justify-content: space-evenly;
   margin-bottom: 42px;
 }
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   .menu_resto_plat {
     width: 30%;
   }
@@ -906,7 +903,7 @@ header p img {
   justify-content: space-evenly;
   margin-bottom: 42px;
 }
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   .menu_resto_desserts {
     width: 30%;
   }
@@ -1013,7 +1010,7 @@ header p img {
 .la-note .menu {
   margin-top: -48px;
 }
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   .la-note .imgfont {
     height: 50vh;
   }
@@ -1024,7 +1021,7 @@ header p img {
 
 .footer_menu {
   width: 100%;
-  font-size: 20px;
+  font-size: 14px 15px 16px 17px 18px 19px 20px 23px 25px 27px, 7;
 }
 
 /*bases*/

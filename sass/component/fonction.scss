@@ -1,13 +1,16 @@
 @use "../utiles/mixins.scss";
+$font-size-1: 0.95rem 1rem 1.15rem 1.3rem 1.5rem 1.48rem  ;
+$font-size-2: 14px 16px 17px 18px 19px 20px 23px 25px 27px;
+
 $couleur-primaire: #9356DC;
+
 
 /*fonctionement*/
 .fonction {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-
-    @media (min-width:992px) {
+    @include mixins.desktop {
         flex-direction: row;
         width: 100%;
         height: 126px;
@@ -15,7 +18,7 @@ $couleur-primaire: #9356DC;
 
 
     & .titre_fonction {
-        font-size: 1.3rem;
+        font-size:nth($font-size-1, 4);
         font-weight: 800;
         font-family: " Shrikhand", sans-serif;
 
@@ -27,7 +30,7 @@ $couleur-primaire: #9356DC;
     }
 
     .font {
-        font-weight: 800;
+        font-weight: 600;
     }
 
 
@@ -49,6 +52,6 @@ $couleur-primaire: #9356DC;
         margin-right: 21px;
         margin-left: 10px;
         color: grey;
-        font-size: 18px;
+        font-size: nth($font-size-2, 4);
     }
 }

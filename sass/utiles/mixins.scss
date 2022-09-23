@@ -4,6 +4,17 @@ $background-color-3: #f2eafb;
 $background-7: linear-gradient(200deg, #9356DC 35%, #FF79DA 65%);
 $couleur-tertiaire: #99E2D0;
 $color-white: white;
+$breakpoints:(desktop:992px);
+$font-size-1: 0.95rem 1rem 1.15rem 1.3rem 1.5rem 1.48rem  ;
+$font-size-2: 14px 15px 16px 17px 18px 19px 20px 23px 25px 27px;
+
+
+@mixin desktop {
+    @media screen and (min-width:map-get($breakpoints, desktop)){ 
+        @content   
+    }
+    }
+    
 
 @mixin hover {
     transform: scale(1.03);
@@ -25,7 +36,7 @@ $color-white: white;
     margin: 35px auto;
     border: none;
     border-radius: 25px;
-    font-size: 0.95rem;
+    font-size: nth($font-size-1, 1);
     font-weight: 500;
     @include box-shadow;
     background: $background-color-1;
@@ -50,18 +61,17 @@ $color-white: white;
     border-radius: 20px;
     @include box-shadow-fonction;
     background-color: $background-color-2;
-    font-size: 1rem;
+    font-size:nth($font-size-1, 2);
     font-weight: 500;
     text-align: start;
     color: #000;
     font-family: "Roboto", sans-serif;
     transition: 200ms;
 
-    @media (min-width:992px) {
+     @include desktop{
         width: 28%;
         flex-direction: row;
-
-    }
+     } 
 
     &:hover {
         @include hover;
@@ -89,7 +99,7 @@ $color-white: white;
     /* coeur vide */
     &--vide {
         padding: 13px 12.5px 12px 12.8px;
-        font-size: 1.48rem;
+        font-size:nth($font-size-1, 6);
     }
     &_filtre {
 
@@ -101,7 +111,7 @@ $color-white: white;
         &--plein {
 
             padding: 12px 11px 12px 13px;
-            font-size: 1.5rem;
+            font-size: nth($font-size-1, 5);
             color: transparent;
             opacity: 0;
             transform-origin: 50% 50%;
@@ -121,7 +131,7 @@ $color-white: white;
     @keyframes rotate {
         0% {
 
-            transform: rotate(-360deg);
+            transform: rotate(360deg);
             margin-top: 20px;
         }
 
@@ -216,7 +226,7 @@ $color-white: white;
     justify-content: space-evenly;
 
 
-    @media (min-width:992px) {
+    @include desktop {
         flex-direction: row;
 
     }
@@ -230,7 +240,7 @@ $color-white: white;
     justify-content: space-evenly;
     margin-bottom: 42px;
 
-    @media (min-width:992px) {
+    @include desktop {
         width: 30%;
     }
 
@@ -325,7 +335,7 @@ $color-white: white;
                 transform: rotate(0deg);
                 transition: all 0.5s;
                 color: $color-white;
-                font-size: 23px;
+                font-size:nth($font-size-2, 8);
                 margin-top: 20px;
             }
 

@@ -1,5 +1,8 @@
 $background-color-6: #f6f6f6;
 $color: #8f9195;
+$font-size-1: 0.95rem 1rem 1.15rem 1.3rem 1.5rem 1.48rem  ;
+
+
 
 /*résérvation*/
 .résérvation {
@@ -10,14 +13,14 @@ $color: #8f9195;
     & h1 {
         margin: 0;
         font-weight: 800;
-        font-size: 1.3rem;
+        font-size:nth($font-size-1, 4);
        
 
     }
     
     & p {
         font-weight: 400;
-        font-size: 1rem;
+        font-size: nth($font-size-1, 2);
         color: $color;
     }
 }
