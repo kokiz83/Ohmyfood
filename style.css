@@ -80,7 +80,7 @@ aside {
 /*animation chek retation*/
 @keyframes rotate {
   0% {
-    transform: rotate(-270deg);
+    transform: rotate(360deg);
   }
   100% {
     transform: rotate(0);
@@ -369,7 +369,6 @@ header p img {
   right: 24px;
   bottom: 20px;
   /* coeur vide */
-  /* zone apparition du coeur plein */
 }
 .coeur:hover {
   cursor: grab;
@@ -616,7 +615,6 @@ header p img {
   right: 24px;
   bottom: 20px;
   /* coeur vide */
-  /* zone apparition du coeur plein */
 }
 .menu_1_coeur .coeur:hover {
   cursor: grab;
