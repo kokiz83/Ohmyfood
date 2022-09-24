@@ -7,6 +7,8 @@ $color-white: white;
 $breakpoints:(desktop:992px);
 $font-size-1: 0.95rem 1rem 1.15rem 1.3rem 1.5rem 1.48rem  ;
 $font-size-2: 14px 15px 16px 17px 18px 19px 20px 23px 25px 27px;
+@use "../bases/typographie.scss";
+
 
 
 @mixin desktop {
@@ -34,14 +36,14 @@ $font-size-2: 14px 15px 16px 17px 18px 19px 20px 23px 25px 27px;
     width: 220px;
     display: block;
     margin: 35px auto;
-    border: none;
     border-radius: 25px;
     font-size: nth($font-size-1, 1);
-    font-weight: 500;
     @include box-shadow;
     background: $background-color-1;
     color: #FFF;
+    border: none;
     transition: 200ms;
+    font-weight: 500;
     cursor: pointer;
 
     &:hover {
@@ -57,22 +59,22 @@ $font-size-2: 14px 15px 16px 17px 18px 19px 20px 23px 25px 27px;
     position: relative;
     margin: 10px 0 10px 12px;
     padding: 0;
-    border: none;
     border-radius: 20px;
     @include box-shadow-fonction;
     background-color: $background-color-2;
     font-size:nth($font-size-1, 2);
-    font-weight: 500;
     text-align: start;
     color: #000;
     font-family: "Roboto", sans-serif;
-    transition: 200ms;
-
-     @include desktop{
+    
+    @include desktop{
         width: 28%;
         flex-direction: row;
-     } 
-
+    } 
+    
+    transition: 200ms;
+    border: none;
+    font-weight: 500;
     &:hover {
         @include hover;
         opacity: 0.9;
@@ -221,23 +223,16 @@ $font-size-2: 14px 15px 16px 17px 18px 19px 20px 23px 25px 27px;
 
 @mixin menu_resto {
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    @extend %flex-evenly;
 
 
     @include desktop {
         flex-direction: row;
 
     }
-
-
 }
-
 @mixin menu-entree {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    @extend %flex-evenly;
     margin-bottom: 42px;
 
     @include desktop {

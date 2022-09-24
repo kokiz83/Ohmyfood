@@ -1,10 +1,9 @@
+@use "../bases/typographie.scss";
 /*localisation*/
 .cherche{
     background-color:#e7e7e7 ;
    & .local {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %flex-center;
 
         input {
             text-align: center;
@@ -16,10 +15,6 @@
             font-weight: 700;
 
         }   
-        .fontAwesome{
-            font-family: 'Helvetica', "FontAwesome", sans-serif;
-            color:black;
-            
-        }   
+       
         }
 }

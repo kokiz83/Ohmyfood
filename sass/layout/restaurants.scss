@@ -18,14 +18,10 @@ $font-size-2: 14px 15px 16px 17px 18px 19px 20px 23px 25px 27px;
        justify-content: space-evenly;
         width: 100%;
         padding-left: 20px;
-        &_1{
+        &_1, &_2{
             width: 90%;
-            
-
         }
-        &_2{
-            width: 90%; 
-        }
+      
     }
     }
 
@@ -98,9 +94,7 @@ $font-size-2: 14px 15px 16px 17px 18px 19px 20px 23px 25px 27px;
         }
 
         &_coeur {
-
-            display: flex;
-            justify-content: space-between;
+@extend %flex-betwen;
             align-items: center;
         }
         &--selection{

@@ -1,0 +1,14 @@
+%flex-evenly{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+%flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+%flex-betwen{
+    display: flex;
+    justify-content: space-between;
+}

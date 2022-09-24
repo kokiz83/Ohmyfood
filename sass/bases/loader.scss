@@ -1,3 +1,4 @@
+@use "../bases/typographie.scss";
 
 $couleur-primaire: #9356DC;
 
@@ -13,14 +14,11 @@ $couleur-primaire: #9356DC;
    animation-delay: 2s;
     animation-fill-mode: both;
     z-index: 10000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+   @extend %flex-center;
 
 &_container{
-    display: flex;
-    width: 5rem;
-    justify-content: space-between;
+    @extend %flex-betwen;
+    width:5rem;
     .loader_point{
         height: 1rem;
         width: 1rem;

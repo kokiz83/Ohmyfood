@@ -7,8 +7,7 @@ $couleur-primaire: #9356DC;
 
 /*fonctionement*/
 .fonction {
-    display: flex;
-    justify-content: space-between;
+    @extend %flex-betwen;
     flex-direction: column;
     @include mixins.desktop {
         flex-direction: row;
