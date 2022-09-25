@@ -25,12 +25,10 @@ $font-size-2: 14px 15px 16px 17px 18px 19px 20px 23px 25px 27px;
     }
     }
 
-    .titre_réstaurants {
+    h2{
         padding: 50px 0 5px 20px;
         margin: 0;
-        font-size: nth($font-size-1, 4);
-        font-weight: 800;
-        font-family: " Shrikhand", sans-serif;
+       
     }
 
 .carte {

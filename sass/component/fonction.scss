@@ -1,11 +1,12 @@
 @use "../utiles/mixins.scss";
 $font-size-1: 0.95rem 1rem 1.15rem 1.3rem 1.5rem 1.48rem  ;
 $font-size-2: 14px 16px 17px 18px 19px 20px 23px 25px 27px;
-
+$font-s:" Shrikhand", sans-serif;
 $couleur-primaire: #9356DC;
 
 
 /*fonctionement*/
+
 .fonction {
     @extend %flex-betwen;
     flex-direction: column;
@@ -16,12 +17,6 @@ $couleur-primaire: #9356DC;
     }
 
 
-    & .titre_fonction {
-        font-size:nth($font-size-1, 4);
-        font-weight: 800;
-        font-family: " Shrikhand", sans-serif;
-
-    }
 
     .bouton {
 

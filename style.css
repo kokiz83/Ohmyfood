@@ -23,6 +23,12 @@ h1 {
   font-size: 1.3rem;
 }
 
+h2 {
+  font-size: 1.3rem;
+  font-weight: 800;
+  font-family: " Shrikhand", sans-serif;
+}
+
 aside {
   margin: 20px 0 0 18px;
 }
@@ -170,7 +176,7 @@ aside {
   animation: loader 0.01s;
   animation-delay: 2s;
   animation-fill-mode: both;
-  z-index: 10000;
+  z-index: 1;
 }
 .loader_container {
   width: 5rem;
@@ -219,9 +225,9 @@ footer {
 footer h2 {
   margin: 0;
   padding: 20px 0 0 0;
-  font-weight: 400;
+  font-weight: 300;
   text-indent: 7%;
-  font-size: 1.15rem;
+  font-size: 1rem;
   font-family: "Shrikhand", cursive;
   color: white;
 }
@@ -293,12 +299,9 @@ header p img {
     width: 90%;
   }
 }
-.restaurants .titre_réstaurants {
+.restaurants h2 {
   padding: 50px 0 5px 20px;
   margin: 0;
-  font-size: 1.3rem;
-  font-weight: 800;
-  font-family: " Shrikhand", sans-serif;
 }
 .restaurants .carte {
   margin: 20px;
@@ -470,11 +473,6 @@ header p img {
     width: 100%;
     height: 126px;
   }
-}
-.fonction .titre_fonction {
-  font-size: 1.3rem;
-  font-weight: 800;
-  font-family: " Shrikhand", sans-serif;
 }
 .fonction .bouton {
   width: 91%;
