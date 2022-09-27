@@ -420,9 +420,10 @@ header p img {
   background-color: #e7e7e7;
   font-size: 17px;
   height: 57px;
-  width: 43%;
+  width: 37%;
   border: none;
   font-weight: 700;
+  margin-left: 4px;
 }
 
 /*résérvation*/

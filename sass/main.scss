@@ -2,7 +2,7 @@
 @use "./bases/base";
 @use "./bases/animations.scss";
 @use "./bases/loader.scss";
-@use "./bases/typographie.scss";
+
 /*layout*/
 @use "./layout/footer.scss";
 @use "./layout/header";
@@ -15,6 +15,7 @@
 /*utiles*/
 @use "./utiles/variables.scss";
 @use "./utiles/mixins.scss";
+@use "./utiles/typographie.scss";
 
 /*menu*/
 @use "./menu-restaurant/menu_1.scss";
