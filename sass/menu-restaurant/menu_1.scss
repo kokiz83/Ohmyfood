@@ -1,7 +1,6 @@
 @use "../utiles/mixins.scss";
 $breakpoints:(desktop:992px);
-$font-size-1: 0.95rem 1rem 1.15rem 1.3rem 1.5rem 1.48rem  ;
-$font-size-2: 14px 15px 16px 17px 18px 19px 20px 23px 25px 27px;
+
 
 
 $background-color-6: #f6f6f6;
@@ -40,7 +39,7 @@ position:relative;
 
             @include mixins.bouton-explore;
             width: 190px;
-            font-size: nth($font-size-2, 4);
+            font-size: 17px;
             height: 55px;
             font-weight: 600;
 
@@ -52,7 +51,7 @@ position:relative;
 
         &_titre {
             font-family: "Shrikhand", cursive;
-            font-size: ($font-size-2, 10);
+            font-size: 27px;
             margin: 27px;
 
 
@@ -62,7 +61,7 @@ position:relative;
         &--selection {
             display: none;
             padding: 20px;
-            font-size: ($font-size-2, 9);
+            font-size:25px;
             cursor: pointer;
 
             &:checked+.coeur .coeur--vide {
@@ -70,6 +69,7 @@ position:relative;
             }
 
             &:checked+.coeur .coeur_filtre--plein {
+
                 opacity: 1;
             }
 
@@ -149,7 +149,7 @@ height: 87px;
       
         width: 100%;
        
-        font-size:($font-size-2, 7);
+        font-size:20px;
     
     }
 

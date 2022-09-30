@@ -1,4 +1,3 @@
-$font-size-2: 14px 15px 16px 17px 18px 19px 20px 23px 25px 27px;
 
 /*header*/
 
@@ -10,7 +9,7 @@ header {
         position: relative;
         font-family: " Shrikhand", sans-serif;
         & .lien_fléche {
-                font-size: nth($font-size-2, 9);
+                font-size: 25px;
                 color: initial;
                 position: absolute;
                 left: 20px;

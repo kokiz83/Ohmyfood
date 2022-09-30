@@ -5,8 +5,7 @@ $background-7: linear-gradient(200deg, #9356DC 35%, #FF79DA 65%);
 $couleur-tertiaire: #99E2D0;
 $color-white: white;
 $breakpoints:(desktop:992px);
-$font-size-1: 0.95rem 1rem 1.15rem 1.3rem 1.5rem 1.48rem  ;
-$font-size-2: 14px 15px 16px 17px 18px 19px 20px 23px 25px 27px;
+
 @use "../utiles/typographie.scss";
 
 
@@ -38,12 +37,13 @@ $font-size-2: 14px 15px 16px 17px 18px 19px 20px 23px 25px 27px;
     display: block;
     margin: 35px auto;
     border-radius: 25px;
-    font-size: nth($font-size-1, 1);
+    font-size: 0.95rem;
     @include box-shadow;
     background: $background-color-1;
     color: #FFF;
     border: none;
     transition: 200ms;
+
     font-weight: 500;
     cursor: pointer;
 
@@ -63,7 +63,7 @@ $font-size-2: 14px 15px 16px 17px 18px 19px 20px 23px 25px 27px;
     border-radius: 20px;
     @include box-shadow-fonction;
     background-color: $background-color-2;
-    font-size:nth($font-size-1, 2);
+    font-size:1rem;
     text-align: start;
     color: #000;
     font-family: "Roboto", sans-serif;
@@ -102,7 +102,7 @@ $font-size-2: 14px 15px 16px 17px 18px 19px 20px 23px 25px 27px;
     /* coeur vide */
     &--vide {
         padding: 13px 12.5px 12px 12.8px;
-        font-size:nth($font-size-1, 6);
+        font-size:1.48rem;
     }
     &_filtre {
 
@@ -114,7 +114,7 @@ $font-size-2: 14px 15px 16px 17px 18px 19px 20px 23px 25px 27px;
         &--plein {
 
             padding: 12px 11px 12px 13px;
-            font-size: nth($font-size-1, 5);
+            font-size: 1.5rem;
             color: transparent;
             opacity: 0;
             transform-origin: 50% 50%;
@@ -128,23 +128,6 @@ $font-size-2: 14px 15px 16px 17px 18px 19px 20px 23px 25px 27px;
 
     }
 }
-
-@mixin check-rotate {
-
-    @keyframes rotate {
-        0% {
-
-            transform: rotate(360deg);
-            margin-top: 20px;
-        }
-
-        100% {
-            transform: rotate(0);
-            margin-top: 00px;
-        }
-    }
-}
-
 
 
 /*animation coeur */
@@ -161,6 +144,7 @@ $font-size-2: 14px 15px 16px 17px 18px 19px 20px 23px 25px 27px;
 
     @keyframes grandi-bat {
         0% {
+
             transform: scale3d(0, 0, 1);
         }
 
@@ -331,7 +315,7 @@ $font-size-2: 14px 15px 16px 17px 18px 19px 20px 23px 25px 27px;
                 transform: rotate(0deg);
                 transition: all 0.5s;
                 color: $color-white;
-                font-size:nth($font-size-2, 8);
+                font-size:23px;
                 margin-top: 20px;
             }
 

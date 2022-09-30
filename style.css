@@ -24,7 +24,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: 800;
   font-family: " Shrikhand", sans-serif;
 }
@@ -87,15 +87,6 @@ aside {
   }
   100% {
     transform: scale3d(1, 1, 1);
-  }
-}
-/*animation chek retation*/
-@keyframes rotate {
-  0% {
-    transform: rotate(360deg);
-  }
-  100% {
-    transform: rotate(0);
   }
 }
 /*animation carte*/
@@ -588,13 +579,13 @@ header p img {
 }
 .menu_1_titre {
   font-family: "Shrikhand", cursive;
-  font-size: 14px 15px 16px 17px 18px 19px 20px 23px 25px 27px, 10;
+  font-size: 27px;
   margin: 27px;
 }
 .menu_1--selection {
   display: none;
   padding: 20px;
-  font-size: 14px 15px 16px 17px 18px 19px 20px 23px 25px 27px, 9;
+  font-size: 25px;
   cursor: pointer;
 }
 .menu_1--selection:checked + .coeur .coeur--vide {
@@ -1008,7 +999,7 @@ header p img {
 
 .footer_menu {
   width: 100%;
-  font-size: 14px 15px 16px 17px 18px 19px 20px 23px 25px 27px, 7;
+  font-size: 20px;
 }
 
 /*bases*/

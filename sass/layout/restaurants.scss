@@ -1,8 +1,7 @@
 @use "../utiles/mixins.scss";
 $background-color-6: #f6f6f6;
 $couleur-tertiaire: #99E2D0;
-$font-size-1: 0.95rem 1rem 1.15rem 1.3rem 1.5rem 1.48rem  ;
-$font-size-2: 14px 15px 16px 17px 18px 19px 20px 23px 25px 27px;
+
 
 /*restaurant*/
 .restaurants {
@@ -50,7 +49,7 @@ $font-size-2: 14px 15px 16px 17px 18px 19px 20px 23px 25px 27px;
     p {
         margin: 2px 0 15px 14px;
         color: black;
-        font-size: nth($font-size-2, 4);
+        font-size: 17px;
         font-family: "Roboto", cursive;
     }
     
@@ -85,7 +84,7 @@ $font-size-2: 14px 15px 16px 17px 18px 19px 20px 23px 25px 27px;
             padding: 6px;
             width: 25%;
             text-align: center;
-            font-size: nth($font-size-2, 1);
+            font-size: 14px;
             color: #088c6c;
             font-weight: bold;
 
@@ -98,7 +97,7 @@ $font-size-2: 14px 15px 16px 17px 18px 19px 20px 23px 25px 27px;
         &--selection{
             display: none; 
             padding: 20px;
-            font-size: nth($font-size-2, 9);
+            font-size: 25px;
             cursor: pointer;
     
             &:checked + .coeur .coeur--vide{
